@@ -5,6 +5,9 @@ while getopts ":i:o:" FLAG; do
             INPUT_DRIVE="${OPTARG}" ;;
         o)
             OUTPUT_DRIVE="${OPTARG}" ;;
+    esac
+done
+
 backup()
     {
          sudo dd if="${INPUT_DRIVE}" of="${OUTPUT_DRIVE}" status=progress bs=64k conv=sync
