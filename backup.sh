@@ -12,3 +12,5 @@ backup()
     {
          sudo dd if="${INPUT_DRIVE}" of="${OUTPUT_DRIVE}" status=progress bs=64k conv=sync
     }
+
+backup
